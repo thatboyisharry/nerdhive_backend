@@ -277,7 +277,7 @@ const uploadToCloud=async(formdata)=>{
      try {
                 await axios({
                     method: "POST", // Required, HTTP method, a string, e.g. POST, GET
-                    url: `https://sassy-luxurious-engineer.glitch.me/uploads/studytools`,
+                    url: `${domain}/uploads/studytools`,
                     headers: formdata.getHeaders(),
                     data:formdata
                     })
@@ -304,7 +304,7 @@ const readImageText=async(url)=>{
   params: {detectOrientation: 'true', language: 'unk'},
   headers: {
     'Content-Type': "application/json",
-    'X-RapidAPI-Key': 'afe22bb39fmsh1d2249efde63eb1p1fac5fjsn457572f8d6e3',
+    'X-RapidAPI-Key': RAPID_API_KEY,
     'X-RapidAPI-Host': 'microsoft-computer-vision3.p.rapidapi.com',
     
   },
