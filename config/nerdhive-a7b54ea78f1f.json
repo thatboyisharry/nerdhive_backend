@@ -1,0 +1,13 @@
+
+{
+  "type": "service_account",
+  "project_id": "nerdhive",
+  "private_key_id": "a7b54ea78f1fa4e280568ef74eb2887566a64fee",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDNNZ74xHXU20Lj\nRRFE0il7UpkYVHTKbAME5DJ4hdHPNe5XTyMiNx1EPRNnYzVm96hdoV921P4l/Bo0\nnSenvQSdTr57rjQMhcHECT3Snh+qgz2foYgKzRt04KwJMaVniUy4NhA5aaWqLtI1\nXO+TXhePokZe6mzTgktUrkaRJHRQXBlBA8TkmH1gTI5q84N7Bhc/W2zKMTGF/GGx\n8lLTG9DpDG318PmlukOoygqQuwScWi9SqC5xmjJlh6wES1LzCduaqjp+MTnh5uO0\norLvSCcfAhBkUSeDrIAQcO2PcHHugyNj5ThInfvQC7iIEyaOUPOf/v4jGr2+xmhG\nwlItPsI5AgMBAAECggEACsY3kQ1it/cMR0fxPAEwmdGAkGNnP4OLEiXz+1LD0LZJ\ndneFLRtUQDcDKS/9kmjuvLbgm3EGb0DnW41Hr5EVcv7zsiVFvjc9otALZ20ouM3I\nOjvnG2NoRl0Wm0dqTTS9GS+V70P7es4JTfiDeasKw1A8dxM0NeIOCbPk/dTlGkeZ\nvUfdT5c9Hn3tTSHCbv13NANT2QyPH9rVilcntL+FjDq0s3f3ipPWZu9q4PiCcPY/\nhWSRs+xch0QfUePlS8UsHfMbdF+NUfaCCadiICKPRszgOAMXNXU1ysExBAQ3jMgi\nwNiQ1qiw/CtTadgRm0Q6Z+tU08xYNsD1sBCGyCTvSwKBgQD0fDOlxDjE49fLoLgM\nvp2JustVPn1SC1cQN44Fi4JaXiPgCoHa4SKe1DYG5BHZLwXHpcxk3KMqk1mk6sZw\nOvF955nTc3YvbncW1xPgitpj3BtLAgu6Y2tFA2m5gEuHFJ+wSotOphy8XwdLhdNe\nhM7OyeYTbn9ngZdS8KKaynWVhwKBgQDW392SlEhXAePS5qwzfHqb4eShjRX+0cxN\nbUurIcWPJUYnB9EeTku+ImhwamvzW5aTPczWs4q+U6iaz+xZ81XD6umDBF+LrOF5\n+2wYJLOCZHTCL1B5ePSzqlT4ffjPlITe0QmJVquVAn8PmPXkInxDCg4ZLI6Skp8X\nC7fRfbbaPwKBgCD+Ecow7KhFRv3Hto6huoi3mHDseeT0es9Jb/T3mqOvSJAXWua6\nsv1UDeZoKLByVAlZKngB/lLkh5hlxlmm2qfu9Sc/0ZcdBR0j8R7AHjCTp2s733FL\nsVIi38WUtpyH//S+WoZGjGIvQMDEUn3S1kW5oT7GDpNdPZqHtqnE4JFJAoGAeFBx\naJnOx6kvP/AZi9qvbIlX032ES2J92vzP2crXLAfa+A/Qb/+3OYdao1dziphF/7wi\n7jUqAtglGEpENTmjVEg86DeSqErtFbhKFlq2iNRm7DRCA0JPAirl2R3wK4sluv2h\nMV1uRclYDAvB4zPMEF2Y90+TpU6j9euBybNyp1ECgYB40tYLUpwzfyndI6i4oGvh\n84SjyFsVxXBIKIa4cl/BDcfnFUduN9jHRWCZOC10srYE/5etxwPFBl9jGq/RBT7+\nrSrDoSSkskGc4JHZR6zhdzIQRnvJzoRHgWR2rHA+3Qwk1IC0c427dLROz/Bstqnl\noFBHpLR6lcGvu8sgGr6jVA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "nerdhive@nerdhive.iam.gserviceaccount.com",
+  "client_id": "115905629771403776806",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nerdhive%40nerdhive.iam.gserviceaccount.com"
+}

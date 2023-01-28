@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students API</title>
+</head>
+<body>
+    <h3>Add Student</h3>
+    <form action="/api/students/add" method="post">
+            <div>
+            <label for='name'>Name: </label>
+            <input id='name' type ='text' name="name" placeholder="full name"/>
+            </div>
+            
+            <div>
+            <label for='grade'>Grade: </label>
+            <input id='grade' name="grade" type="number" />
+            <label for='school'>School: </label>
+            <input id='school' type ='text' name="school"/>
+            </div>
+            
+            <div>
+            <label for='contact'>Contact: </label>
+            <input id='contact' name="contact"  type="number"/>
+            </div>
+            
+            <div>
+            <label for='email'>email: </label>
+            <input id='email' name="email" type="email"/>
+            </div>
+
+            <div>
+            <label for='location'>Location: </label>
+            <input id='location' name="location" type="text"/>
+            </div>
+            
+            <button type ='submit'>Create Student</button>
+    </form>
+
+    <form id="lesson-form" method="post">
+        <div>
+        <label for='topic'>Topic: </label>
+        <input id='topic' type ='text' name="topic" placeholder="topic"/>
+        </div>
+        
+        <div>
+        <label for='date'>Date: </label>
+        <input id='date' name="date" type="date" />
+        <label for='location'>Loctaion: </label>
+        <input id='location' type ='text' name="location"/>
+        </div>
+        
+    
+        <div>
+        <label for='id'>ID: </label>
+        <input id='id' name="id" type="text"/>
+        </div>
+
+        <div>
+        <label for='status'>Status: </label>
+        <input id='status' name="status" type="text"/>
+        </div>
+        
+        <button type ='submit'>Add Lesson</button>
+    </form>
+
+
+    <form id="trans-form" method="post">
+        <div>
+        <label for='amount'>Amount: </label>
+        <input id='amount' type ='text' name="amount" placeholder="amount"/>
+        </div>
+        
+        <div>
+        <label for='date'>Date: </label>
+        <input id='date' name="date" type="date" />
+        </div>
+        
+    
+        <div>
+        <label for='_id'>ID: </label>
+        <input id='_id' name="id" type="text"/>
+        </div>
+
+        <div>
+        <label for='status'>Status: </label>
+        <input id='status' name="status" type="text"/>
+        </div>
+        
+        <button type ='submit'>Add transaction</button>
+    </form>
+
+    <script>
+        const transForm = document.getElementById("trans-form");
+  
+        transForm.addEventListener("submit", () => {
+          const Id = document.getElementById("_id").value;
+          transForm.action = `/api/transactions/${Id}/add`;
+  
+          transForm.submit();
+        });
+
+
+        const lessonForm = document.getElementById("lesson-form");
+  
+        lessonForm.addEventListener("submit", () => {
+          const userId = document.getElementById("id").value;
+          lessonForm.action = `/api/lessons/add/${userId}`;
+  
+          lessonForm.submit();
+        });
+
+        
+      </script>
+    
+</body>
+</html>

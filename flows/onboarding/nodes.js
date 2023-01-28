@@ -1,0 +1,67 @@
+const onboardingNodes=[
+    {
+        name:'start',
+        node:'start',
+        flow:'onboarding',
+        actions:[{name:'saveName',trigger:'',flow:'onboarding'}],
+        uis:[
+            {
+                type:'text',
+                name:'start'
+            },
+            {
+                type:'text',
+                name:'askName'
+            }
+        ],
+        transitions:[
+            {
+                name:'landlord_or_renter',
+                actions:'none',
+                flow:'onboarding', 
+                node:'landlord_or_renter',
+                catchNode:'none',
+                triger:""
+            }
+        ],
+        catch:"",
+        sticky:false
+
+    },
+    ///////////////////////////////
+    {
+        name:'landlord_or_renter',
+        flow:'onboarding',
+        node:'landlord_or_renter',
+        actions:[{name:'isTenant',trigger:'renter',flow:'onboarding'},{name:'isLandlord',trigger:'landlord',flow:'onboarding'}],
+        uis:[{
+            type:'interactive',
+            name:"landlord_or_renter"
+        }],
+        transitions:[
+            {
+                name:'ask_province',
+                node:'ask_province',
+                function:'isLandlord',
+                flow:'landlord', 
+                catchNode:'none',
+                trigger:'landlord'
+            },
+            {
+                name:'ask_province',
+                node:'ask_province',
+                function:'isRenter',
+                flow:'tenant',
+                catchNode:'none',
+                trigger:'renter'
+            }
+        ],
+        catch:"",
+        sticky:false
+    },
+   
+]
+ 
+module.exports={
+  onboardingNodes
+}
